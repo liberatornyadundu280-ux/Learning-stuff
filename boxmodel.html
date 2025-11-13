@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        background-color: black;
+      }
+      body {
+        min-height: 300vh;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+      .b1 {
+        background-color: green;
+        margin: 3px 7px;
+        width: 200px;
+        height: 104px;
+      }
+      .b2 {
+        background-color: rgb(107, 128, 0);
+        margin: 3px 7px;
+        width: 200px;
+        height: 104px;
+      }
+      .b3 {
+        background-color: rgb(128, 0, 45);
+        margin: 3px 7px;
+        width: 200px;
+        height: 104px;
+      }
+      .b4 {
+        background-color: rgb(2, 0, 128);
+        margin: 3px 7px;
+        width: 200px;
+        height: 104px;
+      }
+      .container {
+        display: flex;
+        margin: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 600px;
+        height: 400px;
+        padding: auto;
+        position: fixed;
+        left: 50%; /* center horizontally */
+        top: 50vh; /* halfway down the viewport */
+        transform: translate(-50%, -50%) rotateZ(-12deg) translateZ(0);
+        /* translate to center, then rotate; translateZ(0) triggers GPU */
+        width: 40vw; /* size the image element (adjust as needed) */
+        height: 40vh;
+        background-image: url("C:\Users\LIBERATOR TANAKA\Dropbox\tynoe🤗\WhatsApp Image 2025-03-18 at 17.36.51_293efeaa.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        pointer-events: none; /* so it won't block clicks */
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        z-index: 99 99; /* keep it on top (adjust if necessary) */
+        /* capacity: 0.95; */
+        will-change: transform;
+      }
+      div {
+        border-radius: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="b1"></div>
+    <div class="b2"></div>
+    <div class="b3"></div>
+    <div class="b4"></div>
+    <div class="container">
+      <div class="b1"></div>
+      <div class="b2"></div>
+      <div class="b3"></div>
+      <div class="b4"></div>
+    </div>
+  </body>
+</html>

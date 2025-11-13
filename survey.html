@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey form</title>
+    <link rel="stylesheet" href="survey.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Share Your Thoughts with NextGenTanaka!</h1>
+    </header>
+    <main>
+      <section id="survey">
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" name="email" required />
+
+          <label for="interest">Which topic interests you the most?</label>
+          <select name="interest">
+            <option value="fullstack">Full-Stack Development</option>
+            <option value="python">Python & Data Analysis</option>
+            <option value="projects">Projects & Mini-Apps</option>
+            <option value="career">Career Tips</option>
+          </select>
+
+          <label for="feedback">Your Feedback / Suggestions:</label>
+          <textarea name="feedback" rows="4"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <p>&copy;2025 NextGenTanaka | Contact: liberatornyadundu280@gmail.com</p>
+  </footer>
+</html>

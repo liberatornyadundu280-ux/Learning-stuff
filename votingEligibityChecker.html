@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Voting Eligibility Checker</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Voting Eligibility Checker</h2>
+
+    <!-- Input form -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" />
+    <br /><br />
+    <label for="age">Age:</label>
+    <input type="number" id="age" placeholder="Enter your age" />
+    <br /><br />
+    <button onclick="checkEligibility()">Check Eligibility</button>
+
+    <br /><br />
+
+    <!-- Table to display result -->
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Eligibility</th>
+      </tr>
+      <tr>
+        <td id="displayName">-</td>
+        <td id="displayAge">-</td>
+        <td id="displayResult">-</td>
+      </tr>
+    </table>
+
+    <script>
+      function checkEligibility() {
+        // Get values from input
+        let name = document.getElementById("name").value;
+        let age = parseInt(document.getElementById("age").value);
+
+        // Display in table
+        document.getElementById("displayName").innerHTML = name;
+        document.getElementById("displayAge").innerHTML = age;
+
+        // Check voting eligibility
+        if (age >= 18) {
+          document.getElementById("displayResult").innerHTML =
+            "Eligible to vote ✅";
+        } else {
+          document.getElementById("displayResult").innerHTML =
+            "Not eligible to vote ❌";
+        }
+      }
+    </script>
+  </body>
+</html>

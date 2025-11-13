@@ -1,0 +1,48 @@
+<DOCTYPE! html>
+  <html>
+    <head>
+      <style>
+        /* ::first-letter-style the first letter of a paragraph */
+        p::first-letter {
+          font-size: 50px;
+          font-weight: bold;
+          color: darkred;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        }
+        /* ::first-line-style the first line of a paragraph */
+        p::first-line {
+          font-style: italic;
+          color: #b004d6;
+        }
+        /* ::before-insert content before an element */
+        h2::before {
+          content: "🫠";
+          color: #95c408;
+        }
+        /* ::after-insert content after an element */
+        h2::after {
+          content: "💕";
+          color: #08c4c1;
+        }
+        /* ::selection-style selected text */
+        ::selection {
+          background-color: yellow;
+          color: black;
+        }
+        title::before {
+          content: 🔥;
+          color: #08c4c1;
+        }
+        title::after {
+          content: 🔥;
+          color: #08c4c1;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Pseudo-Element selectors Demo</h1>
+      <h2>CSS Magic</h2>
+      <p>Welcome to Aditya university</p>
+    </body>
+  </html></DOCTYPE!
+>
